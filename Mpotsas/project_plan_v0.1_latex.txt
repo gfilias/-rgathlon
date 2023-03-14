@@ -1,0 +1,153 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+\usepackage{float}
+\usepackage{kerkis} 
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{enumitem}  
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{fancyhdr} %for header
+\usepackage[hidelinks]{hyperref} %for clickable table of contents
+
+\hypersetup{
+    colorlinks=true,
+    unicode=true,
+    allcolors=black
+}
+
+\newcommand{\en}{\selectlanguage{english}} 
+\newcommand{\tl}{\textlatin} 
+\newcommand{\gr}{\selectlanguage{greek}}   
+\newcommand{\code}[1]{\texttt{#1}}         
+\newcommand{\tsuper}{\textsuperscript}
+\newcommand{\tsub}{\textsubscript}
+
+\renewcommand{\thesection}{\arabic{section}} %Η αρίθμηση των section ξεκιναει απο το 1. και οχι απο το 0.1
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} %Η αρίθμηση των subsection ξεκιναει απο το x.1, οπου x το section
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}} %Η αρίθμηση των subsubsection ξεκιναει απο το x.y.1
+
+\gr
+\pagestyle{fancy} %configuring header and footer of every page
+\fancyhf{}
+\rhead{}
+\lhead{\en Project Plan v0.1 \gr}
+\cfoot{\thepage}
+
+
+\title{\includegraphics[width=10cm]{Screenshot (536).png}\\
+{\bf \en{Project Plan v0.1 }}}
+\author{ΣΠΕΝΤΖΑΡΗΣ ΠΑΝΑΓΙΩΤΗΣ 1071110\\
+ΣΕΡΓΙΑΝΝΗΣ ΠΑΡΗΣ  1067467\\
+ΦΙΛΙΑΣ ΓΕΩΡΓΙΟΣ  1067468\\
+ΜΠΟΤΣΑΣ ΓΕΩΡΓΙΟΣ 1070929}
+
+\date{Ακαδημαϊκό έτος 2022-23}
+
+\begin{document}
+\gr
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+
+
+\section{Αρμοδιότητες για Παραδοτέο}
+Στον παρακάτω πίνακα παρουσιάζονται οι αρμοδιότητες καθε μέλους της ομάδας για το συγκεκριμένο παραδοτέο:
+\\
+\includegraphics[width=0.9\textwidth]{Screenshot (542).png}
+
+
+
+
+\section{Μέρος Α- Διάγραμμα \en Gantt}
+% ============================ ΕΡΩΤΗΜΑ 1 ============================
+\gr Στο διάγραμμα \en Gantt \gr ομαδοποιήσαμε τις διεργασίες σε τρείς ευρύτερες για την ευκολία ανάθεσης των ρόλων στα μέλη της ομάδας καθώς και για την εύστοχη κοστολόγηση του έργου.Οι εν λόγω διεργασίες είναι οι εξής:
+\begin{itemize}
+    \item  \en Planning 
+    \item  \en Development Phase 
+    \item  \en Testing and Sales
+\end{itemize}
+\begin{center}
+    \includegraphics[width=1.3\textwidth]{Project Plan Gantt.png}
+\\
+ 
+\end{center}
+\en (Zoom in for better view) \gr
+
+
+%\LaTeX. 
+\newpage
+\section{Μέρος B-Διάγραμμα \en Pert \gr}
+\newline
+\newline
+
+• Στο διάγραμμα \en Pert \gr ακολουθήθηκε το ίδιο μοντέλο υλοποίησης με αυτό του 
+διαγράμματος \en Gantt \gr \\
+• Με κόκκινα βέλη αναγράφεται το κρίσιμο μονοπάτι του διαγράμματος \\
+• Με μαύρα βέλη δείχνουμε ότι μία διεργασία μπορεί να πραγματοποιηθεί ανεξάρτητα από 
+τις άλλες ή και ταυτόχρονα
+\newline
+\newline
+\begin{center}
+    \title{\includegraphics[width=16cm]{Project Plan Pert (2).png}}\\
+\end{center}
+
+\en (Zoom in for better view) \gr
+\newpage
+\section{\textlatin{\grΜέρος Γ-Ανάθεση Ρόλων Σε Ανθρώπινο Δυναμικό}}
+\nextline
+
+Για την ανάθεση των ρόλων στην ομάδα μας,θα πρεπει πρώτα να τους θέσουμε.Αρχικά έχοντας επιλέξει σαν μέθοδο διαχείρισης πρότζεκτ το \en Scrum \gr ενας εμφανής ρόλος είναι αυτος του \en Scrum Master \gr,τον οποίο θα αναλάβει ο Παρασκεύας Σεργιάννης ο οποίος θα είναι υπεύθυνος για την οργάνωση της ομάδας και τις συναντήσεις που θα γίνονται για την εκπόνηση της εργασίας.Ύστερα διακρίνουμε τους ρόλους σε τεσσερις κατηγορίες που είναι οι εξής:\\
+\newline
+\newline
+\includegraphics[width=0.9\textwidth]{Screenshot (538).png}
+\newline
+\newline
+
+
+\section{Μέρος Δ-Απασχόληση Ομάδας Με Εργασίες}
+
+\begin{center}
+\includegraphics[width=1.2\textwidth]{Screenshot (540).png} \nextline \nextline
+\end{center}
+\gr
+\nextline
+
+Σημείωση: Οι αριθμοί στις στήλες \en Planning,Development Phase,Testing and Sales \gr αναφέρονται στις εργάσιμες μέρες κάθες μέλους δουλεύοντας πάνω στο αντίστοιχο \en task \gr και προέρχονται απο το διάγραμμα \en Pert. \gr\\
+\\
+
+
+\newline
+\newline
+\newpage
+\section{Μέρος Ε-Εκτίμηση Κόστους}
+
+Διαχωρίζουμε τα κόστη του \en project \gr σε δυο κατηγορίες.Τα \textbf{\gr άμεσα} κόστη και τα \textbf{\gr έμμεσα}.Άμεσο κόστος θα θεωρηθεί ο μισθός του καθε μέλους της ομάδας και θα υπολογιστεί μέσω της ανάλογης ενασχόλησης του με το εν λόγω \en project \gr ενώ τα έμμεσα κόστη θα θεωρηθούν λειτουργικά ζητήματα όπως είναι η αγορά \en domain \gr για την εργασίας μας,ενοικίαση \en server \gr καθώς και η προώθηση και διαφήμιση του έργου.
+\subsection{\gr Άμεσα κοστη}
+Για τον υπολογισμό των μισθών του κάθε μέλους της ομάδας θα πάρουμε ως δεδομένο ότι ο κάθε εργαζόμενος δουλεύει οχτώ ώρες την μέρα και θα αμείβεται με δέκα ευρώ την ώρα.Απο αυτά τα δεδομένα κατασκευάζουμε τον τύπο (εργάσιμες μέρες)*8*10/1ωρα.Έτσι αξιοποιώντας τον πίνακα Απασχόλησης της ομάδας με εργασίες(σελ.4)προκύπτει ο παρακάτω πίνακας:\\
+\\
+\includegraphics[width=1.3\textwidth]{Screenshot (544).png}
+Το συνολικό κόστος μίσθωσης όλων των μελών είναι το άθροισμα της στήλης "Μισθός" που ισούται με \textbf{\euro{62,080}}
+\subsection{\gr Έμμεσα κόστη}
+Σημαντική κίνηση για την επιτυχία της εφαρμογής είναι η διαφήμιση της,ένα εκτιμώμενο κόστος για διαφήμιση στο \en Facebook \gr θα ηταν κοντα στα \euro{350}.Επίσης σημαντική είναι και η ενοικίαση ενός \en server \gr για την φιλοξενία της εφαρμογής το οποίο θα στοίχιζε \euro{6} τον μήνα απο το \en site,Top Host \gr αρα 6*12=\euro{72} τον χρόνο.
+\subsection{\gr Συνολικό κόστος \en Project}
+Λαμβάνοντας υπόψιν τα Άμμεσα και τα έμμεσα κόστη για την εκπονηση της εργασιας,το συνολικό κόστος ανέρχεται στα \textbf{\euro{62,502}}
+\newpage
+
+\newline
+\newline
+\section{Μέρος Ζ-Εργαλεία που χρησιμοποιήθηκαν} \en
+i. Latex \\ \gr
+Σκοπός: Σύνταξη των κειμένων\\ \en
+ii. Visual Paradigm Online\\ \gr
+Σκοπός: Δημιουργία του διαγράμματος \en Gantt \gr και \en Pert \\ 
+iii. Github \\ \en
+\gr Σκοπός:Ανέβασμα αρχείων \\ \en
+iV. Microsoft Excel \\
+\gr Σκοπός:Δημιουργία πινάκων 
+\end{document}
