@@ -1,0 +1,148 @@
+\documentclass[10pt,a4paper]{report}
+
+\usepackage[utf8]{inputenc}
+\usepackage[greek,english]{babel}
+\usepackage{float}
+\usepackage{kerkis} 
+\usepackage{graphicx}
+\usepackage{enumerate}
+\usepackage{enumitem}  
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{fancyhdr} %for header
+\usepackage[hidelinks]{hyperref} %for clickable table of contents
+
+\hypersetup{
+    colorlinks=true,
+    unicode=true,
+    allcolors=black
+}
+
+\newcommand{\en}{\selectlanguage{english}} 
+\newcommand{\tl}{\textlatin} 
+\newcommand{\gr}{\selectlanguage{greek}}   
+\newcommand{\code}[1]{\texttt{#1}}         
+\newcommand{\tsuper}{\textsuperscript}
+\newcommand{\tsub}{\textsubscript}
+
+\renewcommand{\thesection}{\arabic{section}} %Η αρίθμηση των section ξεκιναει απο το 1. και οχι απο το 0.1
+\renewcommand{\thesubsection}{\arabic{section}.\arabic{subsection}} %Η αρίθμηση των subsection ξεκιναει απο το x.1, οπου x το section
+\renewcommand{\thesubsubsection}{\arabic{section}.\arabic{subsection}.\arabic{subsubsection}} %Η αρίθμηση των subsubsection ξεκιναει απο το x.y.1
+
+\gr
+\pagestyle{fancy} %configuring header and footer of every page
+\fancyhf{}
+\rhead{}
+\lhead{\textlatin{Team Plan v0.2} }
+\cfoot{\thepage}
+
+
+\title{\includegraphics[width=10cm]{Screenshot (536).png}\\
+{\bf \en{Team Plan v0.2 }}}
+\author{ΣΠΕΝΤΖΑΡΗΣ ΠΑΝΑΓΙΩΤΗΣ 1071110\\
+ΣΕΡΓΙΑΝΝΗΣ ΠΑΡΗΣ  1067467\\
+ΦΙΛΙΑΣ ΓΕΩΡΓΙΟΣ  1067468\\
+ΜΠΟΤΣΑΣ ΓΕΩΡΓΙΟΣ 1070929}
+
+\date{Ακαδημαϊκό έτος 2022-23}
+
+\begin{document}
+\gr
+\maketitle
+
+\newpage
+\tableofcontents
+\newpage
+
+\section{Mέρος Α-Αρμοδιότητες για παραδοτέο}
+
+\textlatin{Project Manager} : Παρασκευάς-Βασίλειος Σεργίαννης\\
+\textlatin{Qaulity Manager }: Φίλιας Γεώργιος \\
+\textlatin{Contributor} :  Μπότσας Γεώργιος \\
+\textlatin{Editor} : Σπεντζάρης Παναγιώτης \\
+
+
+
+
+\section{Μέρος Β- Διάγραμμα \en Gantt}
+% ============================ ΕΡΩΤΗΜΑ 1 ============================
+\gr Στο παρακάτω διάγραμμα \en Gantt \gr αναγράφονται οι ημερομηνίες υλοποίησης των ολοκληρωμένων 
+παραδοτέων καθώς και οι προγραμματισμένες για τα επόμενα που δεν έχουν ακόμα ολοκληρωθεί.
+\newline
+\newline
+\begin{center}
+
+   
+
+\title{\includegraphics[width=16cm]{Team Plan Gantt.png}}\\
+ \left \en (Zoom in for better view) \gr
+\end{center}
+
+%\LaTeX. 
+\newpage
+\section{Μέρος Γ-Διάγραμμα \en Pert \gr}
+\newline
+\newline
+
+• Στο διάγραμμα \en Pert \gr ακολουθήθηκε το ίδιο μοντέλο υλοποίησης με αυτό του 
+διαγράμματος \en Gantt \gr \\
+• Με κόκκινα βέλη αναγράφεται το κρίσιμο μονοπάτι του διαγράμματος \\
+• Με μαύρα βέλη δείχνουμε ότι μία διεργασία μπορεί να πραγματοποιηθεί ανεξάρτητα από 
+τις άλλες ή και ταυτόχρονα
+\newline
+
+\title{\includegraphics[width=16cm]{Team Plan Pert_MP.jpg}\\
+\left \en (Zoom in for better view) \gr
+\newpage
+\section{\textlatin{\gr Μέρος Δ-Επιλογή Μεθόδου}}
+Για την υλοποίηση αυτής της εργασίας επιλέξαμε να χρησιμοποιήσουμε την μέθοδο \en Scrum.
+\left {
+ \gr
+\subsubsection{\textlatin{ \gr Λίγα Λόγια για την \en Scrum \gr}}}
+\newline
+\newline
+Η ανάπτυξη στην μέθοδο αυτή γίνεται σε επαναληπτικούς κύκλους εργασίας, οι οποίοι ονομάζονται \en Sprints \gr. Οι επαναλήψεις δεν πρέπει να διαρκούν περισσότερο από ένα μήνα και εκτελούνται σειριακά  χωρίς οποιεσδήποτε χρονικές καθυστερήσεις μεταξύ τους. Στην αρχή κάθε \en Sprint \gr η ομάδα επιλέγει τα στοιχεία, τα οποία αποτελούν τις απαιτήσεις των πελατών, από μια λίστα στην οποία είναι ταξινομημένες βάση προτεραιότητας \en (Backlog). \gr
+\newline
+\newline
+\subsubsection{{ \gr Γιατί την επιλέξαμε \gr}}}
+Η επιλογή αυτής της μεθόδου έγινε διότι η ομάδα μας προτιμά να επικεντρώνεται στην εξελικτική 
+ανάπτυξη των εργασιών έτσι ώστε να υπάρχει τακτική επικοινωνία μεταξύ των μελών και ο ένας να 
+συμβαδίζει με την πρόοδο του άλλου. Με αυτόν τον τρόπο το τελικό αποτέλεσμα του έργου θα είναι 
+καρπός ομαδικής εργασίας και όχι ατομικής κάθε μέλους που συνδικάστηκε και δημιούργησε το τελικό 
+αυτό αποτέλεσμα το οποίο στην πλειοψηφία αυτών των περιπτώσεων δεν είναι το αναμενόμενο
+\newline
+\newline
+
+\section{Μέρος Ε-Λόγοι Σύστασης της Ομάδας}
+
+Η ομάδα κατά της αρχική της σύνθεση ήταν 5μελής αλλά στην συνέχεια ένα μέλος αποφάσισε ότι δεν 
+επιθυμεί να ασχοληθεί με το επικείμενο αυτό \en Project \gr αυτό το εξάμηνο. Το γεγονός αυτό αποσυντόνισε την 
+ομάδα αρχικά λόγω της αναμενόμενης αύξησης των εργασιακών απαιτήσεων που θα έπρεπε κάθε μέλος να 
+ανταποκριθεί. Παρόλαυτα αυτά η ομάδα προσαρμόστηκε γρήγορα στα νέα δεδομένα καθώς τα τρία από τα 
+τέσσερα μέλη της έχουν ξανασυνεργαστεί στο παρελθόν και ένταξαν άμεσα το 4ο μέλος στον τρόπο εργασίας 
+τους και στα παλαιότερα \en project \gr που έχουν υλοποιήσει σε συνδυασμό με δικές του προτάσεις.
+\newpage
+\section{Μέρος ΣΤ-Λειτουργία Ομάδας}
+Οι συναντήσεις της ομάδας δεν θα είναι καθημερινές αλλά θα γίνονται ανά δεύτερη ή τρίτη 
+μέρα ανάλογα με τις απαιτήσεις της εκάστοτε φάσης του \en project. \gr Επίσης θεωρούμε σημαντικό 
+η ομάδα να παραμένει αναπόσπαστη από εξωτερικούς παράγοντες που μπορεί να την 
+καθυστερήσουν(βλ. κακές κριτικές εξωτερικών ανθρώπων του κοντινού μας περιβάλλοντος για 
+την αρχική μας ιδέα) με σκοπό να είναι το δυνατότερο αποδοτική. Εκεί βρίσκουμε καταλυτική 
+την συμβολή του \en Scrum Master \gr
+\newline
+\newline
+\section{Μέρος Z-\en Github }
+\en Github Link: https://github.com/gfilias/Orgathlon \gr
+\section{Μέρος Η-Εργαλεία που Χρησιμοποιήθηκαν}
+\centering{
+\textlatin{i. LaTeX } \\
+Σκοπός:Σύνταξη των κειμένων \\
+\textlatin{ii. Wix} \\
+Σκοπός:Δημιουργία του logo \\
+\textlatin{iii. Uizard.io} \\
+Σκοπός:Δημιουργία \textlatin{Mockups} \\
+\textlatin{iV. Github} \\
+Σκοπός:Ανέβασμα αρχείων \\
+}
+
+\end{document}
