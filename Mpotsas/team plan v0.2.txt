@@ -56,10 +56,10 @@
 
 \section{Mέρος Α-Αρμοδιότητες για παραδοτέο}
 
-\textlatin{Project Manager} : Παρασκευάς-Βασίλειος Σεργίαννης\\
-\textlatin{Qaulity Manager }: Φίλιας Γεώργιος \\
-\textlatin{Contributor} :  Μπότσας Γεώργιος \\
-\textlatin{Editor} : Σπεντζάρης Παναγιώτης \\
+\textlatin{Project Manager} :  Φίλιας Γεώργιος\\
+\textlatin{Qaulity Manager }: Σπεντζάρης Παναγιώτης \\
+\textlatin{Contributor} : Παρασκευάς-Βασίλειος Σεργίαννης\\
+\textlatin{Editor} : Μπότσας Γεώργιος \\
 
 
 
