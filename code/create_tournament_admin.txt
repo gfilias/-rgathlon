@@ -1,0 +1,155 @@
+class Tournament:
+    def __init__(self, name, date, location, tournament_type):
+        self.name = name
+        self.date = date
+        self.location = location
+        self.tournament_type = tournament_type
+        self.rules = None
+        self.entry_fee = None
+        self.prize_money = None
+        self.athlete_points = None
+
+    def set_rules(self, rules):
+        self.rules = rules
+
+    def set_entry_fee(self, entry_fee):
+        self.entry_fee = entry_fee
+
+    def set_prize_money(self, prize_money):
+        self.prize_money = prize_money
+
+    def set_athlete_points(self, athlete_points):
+        self.athlete_points = athlete_points
+
+
+class TournamentManager:
+    def create_tournament(self):
+        tournament = self.get_tournament_details()
+        if tournament:
+            self.set_tournament_rules(tournament)
+            self.set_entry_fee_and_prize(tournament)
+            self.display_completed_tournament(tournament)
+            self.confirm_tournament_creation(tournament)
+            self.display_success_message()
+        else:
+            self.display_error_message("Error: Required fields are missing!")
+
+    def get_tournament_details(self):
+        name = input("Enter the name of the tournament: ")
+        date = input("Enter the date of the tournament: ")
+        location = input("Enter the location of the tournament: ")
+        tournament_type = input("Enter the type of tournament: ")
+        
+        if name and date and location and tournament_type:
+            return Tournament(name, date, location, tournament_type)
+        else:
+            return None
+
+    def set_tournament_rules(self, tournament):
+        rules = input("Enter the rules and regulations of the tournament: ")
+        tournament.set_rules(rules)
+
+    def set_entry_fee_and_prize(self, tournament):
+        entry_fee = input("Enter the entry fee for participating teams: ")
+        prize_money = input("Enter the prize money for the winners: ")
+        athlete_points = input("Enter the athlete points earned: ")
+        tournament.set_entry_fee(entry_fee)
+        tournament.set_prize_money(prize_money)
+        tournament.set_athlete_points(athlete_points)
+
+    def display_completed_tournament(self, tournament):
+        print("Completed Tournament Details:")
+        print("Name:", tournament.name)
+        print("Date:", tournament.date)
+        print("Location:", tournament.location)
+        print("Type:", tournament.tournament_type)
+        print("Rules:", tournament.rules)
+        print("Entry Fee:", tournament.entry_fee)
+        print("Prize Money:", tournament.prize_money)
+        print("Athlete Points:", tournament.athlete_points)
+
+    def confirm_tournament_creation(self, tournament):
+        choice = input("Press (Create) to confirm the creation of the tournament or (Cancel) to cancel: ")
+        if choice.lower() == "create":
+            # Process and store the tournament in the system
+            # Code for tournament creation
+            pass
+        else:
+            # Cancel the tournament creation
+            pass
+
+    def display_success_message(self):
+        print("Tournament created successfully!")
+
+    def display_error_message(self, message):
+        print(message)
+
+
+# Handle alternative flow 1: Cancel the creation of a tournament
+class TournamentManager:
+    def create_tournament(self):
+        tournament = self.get_tournament_details()
+        if tournament:
+            self.set_tournament_rules(tournament)
+            self.set_entry_fee_and_prize(tournament)
+            self.display_completed_tournament(tournament)
+            choice = input("Press (Create) to confirm the creation of the tournament or (Cancel) to cancel: ")
+            if choice.lower() == "create":
+                self.confirm_tournament_creation(tournament)
+                self.confirm_tournament_creation(tournament)
+self.display_success_message()
+else:
+self.display_error_message("Tournament creation canceled.")
+else:
+self.display_error_message("Error: Required fields are missing!")
+# Handle alternative flow 2: The tournament already exists
+def confirm_tournament_creation(self, tournament):
+    if tournament_already_exists(tournament):
+        self.display_error_message("Error: The tournament already exists.")
+    else:
+        # Process and store the tournament in the system
+        # Code for tournament creation
+        pass
+
+# Handle alternative flow 3: Required field without completion
+def get_tournament_details(self):
+    name = input("Enter the name of the tournament: ")
+    date = input("Enter the date of the tournament: ")
+    location = input("Enter the location of the tournament: ")
+    tournament_type = input("Enter the type of tournament: ")
+
+    if name and date and location and tournament_type:
+        return Tournament(name, date, location, tournament_type)
+    else:
+        self.display_error_message("Error: Required fields are missing!")
+        return None
+
+# Handle alternative flow 4: Invalid input format
+def set_entry_fee_and_prize(self, tournament):
+    while True:
+        try:
+            entry_fee = float(input("Enter the entry fee for participating teams: "))
+            break
+        except ValueError:
+            self.display_error_message("Error: Invalid input format. Entry fee must be a numeric value.")
+
+    while True:
+        try:
+            prize_money = float(input("Enter the prize money for the winners: "))
+            break
+        except ValueError:
+            self.display_error_message("Error: Invalid input format. Prize money must be a numeric value.")
+
+    while True:
+        try:
+            athlete_points = float(input("Enter the athlete points earned: "))
+            break
+        except ValueError:
+            self.display_error_message("Error: Invalid input format. Athlete points must be a numeric value.")
+
+    tournament.set_entry_fee(entry_fee)
+    tournament.set_prize_money(prize_money)
+    tournament.set_athlete_points(athlete_points)
+
+def display_error_message(self, message):
+    print(message)
