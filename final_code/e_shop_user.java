@@ -91,7 +91,7 @@ public class EShopApp extends JFrame {
         // Add action listeners
         sportFacilityComboBox.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-          updateProductList();
+                     updateProductList();
             }
         });
 
@@ -170,8 +170,7 @@ public class EShopApp extends JFrame {
         // Code to proceed with the purchase and payment
         // Display the user's cart and ask for confirmation
         int confirmation = JOptionPane.showConfirmDialog(this, "Proceed with the purchase?", "Confirmation", JOptionPane.YES_NO_OPTION);
-        if (confirmation == JOptionPane.YES_OPTION)
-{
+        if (confirmation == JOptionPane.YES_OPTION) {
             // Code to proceed with the payment and confirmation
             String paymentMethod = JOptionPane.showInputDialog(this, "Select payment method:");
             String deliveryAddress = JOptionPane.showInputDialog(this, "Enter delivery address:");
@@ -199,3 +198,4 @@ public class EShopApp extends JFrame {
         });
     }
 }
+               

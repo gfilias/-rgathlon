@@ -3,15 +3,13 @@ CREATE TABLE User (
   user_id INT PRIMARY KEY,
   username VARCHAR(50),
   password VARCHAR(50),
-  email VARCHAR(100),
-  -- Additional user information columns
+  email VARCHAR(100)
 );
 
 -- Athlete Table
 CREATE TABLE Athlete (
   athlete_id INT PRIMARY KEY,
   user_id INT,
-  -- Additional athlete-specific columns
   FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
@@ -28,15 +26,13 @@ CREATE TABLE Friendlist (
 CREATE TABLE Admin (
   admin_id INT PRIMARY KEY,
   user_id INT,
-  -- Additional admin-specific columns
   FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
 -- Eshop Table
 CREATE TABLE Eshop (
   eshop_id INT PRIMARY KEY,
-  eshop_name VARCHAR(100),
-  -- Additional eshop columns
+  eshop_name VARCHAR(100)
 );
 
 -- Chat Table
@@ -46,7 +42,6 @@ CREATE TABLE Chat (
   receiver_id INT,
   message VARCHAR(255),
   timestamp DATETIME,
-  -- Additional chat columns
   FOREIGN KEY (sender_id) REFERENCES User(user_id),
   FOREIGN KEY (receiver_id) REFERENCES User(user_id)
 );
@@ -57,7 +52,6 @@ CREATE TABLE Reservation (
   user_id INT,
   facility_id INT,
   reservation_date DATE,
-  -- Additional reservation columns
   FOREIGN KEY (user_id) REFERENCES User(user_id),
   -- Foreign key reference to the relevant facility table
 );
@@ -68,7 +62,6 @@ CREATE TABLE Payment (
   user_id INT,
   amount DECIMAL(10, 2),
   payment_date DATE,
-  -- Additional payment columns
   FOREIGN KEY (user_id) REFERENCES User(user_id)
 );
 
@@ -78,7 +71,6 @@ CREATE TABLE Product (
   product_name VARCHAR(100),
   price DECIMAL(10, 2),
   description VARCHAR(255),
-  -- Additional product columns
 );
 
 -- Tournament Table
@@ -87,6 +79,5 @@ CREATE TABLE Tournament (
   tournament_name VARCHAR(100),
   tournament_date DATE,
   organizer_id INT,
-  -- Additional tournament columns
   FOREIGN KEY (organizer_id) REFERENCES Organizer(organizer_id)
 );
